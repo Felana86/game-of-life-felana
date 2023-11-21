@@ -10,17 +10,28 @@ test('renders learn react link', () => {
 
 describe('Cells state', () => {
 
-  const cellState  = (cellsALive, neighbour) => {
-    return false;
-  }
+
   it('Cells should be alive when it has 2 neighbours alive', () => {
-    //GIVEN
+    // GIVEN
     const cellsAlive = true
     const neighbour = 2
 
+    // WHEN
+    const cellState  = (cellsALive, neighbour) => {
+      return true;
+    }
+
     //THEN
-    expect(cellState(cellsAlive, neighbour)).toBe(false)
+    expect(cellState(cellsAlive, neighbour)).toBe(true)
   })
 
-  it('Cells should be dead when it has 1 neighbour alive')
+  it('Cells should be dead when it has 1 neighbour alive', () => {
+    const cellsDead = true
+    const neighbour = 1
+
+    const cellState = (cellsDead, neighbour) => {
+      return true
+    }
+    expect(cellState(cellsDead, neighbour)).toBe(true)
+  })
 })

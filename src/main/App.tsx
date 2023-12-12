@@ -1,10 +1,9 @@
-export const checkCellState = () => {
-	let cellAlive  = true;
-	let neighbour = 2
+export const checkCellState = (cellAlive: boolean, neighbour: number) => {
 
 	if(cellAlive && neighbour === 2) {
-		return "Cell is alive"
+		return true
+	}
+	else {
+		return false
 	}
 }
-
-export default checkCellState();

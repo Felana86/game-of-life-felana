@@ -12,4 +12,16 @@ describe('Cells state', () => {
     const checkState = checkCellState(false, 1)
     expect(checkState).toBeFalsy()
   })
+
+  it('Cells alive should be dead when it has 4 neighbour alive', () => {
+
+  })
+
+  it('Cells should be alive when it has 3 neighbour', () => {
+
+  })
+
+  it('Dead cell should be alive when it has 2 or 3 neighbour', () => {
+
+  })
 })

@@ -1,8 +1,10 @@
-import React from 'react';
-import './App.css';
+export const checkCellState = () => {
+	let cellAlive  = true;
+	let neighbour = 2
 
-function App() {
-
+	if(cellAlive && neighbour === 2) {
+		return "Cell is alive"
+	}
 }
 
-export default App;
+export default checkCellState();

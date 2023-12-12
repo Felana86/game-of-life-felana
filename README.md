@@ -1,3 +1,10 @@
+# Description de ma démarche:
+
+La plupart des gens, ou du moins, d'après ce que j'ai vu, commencent ce kata par tester les cellules
+vivantes en fonction d eleur position dans un tableau à deux entrées. 
+
+Moi je préfère commencer par tester l'état des cellules. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
